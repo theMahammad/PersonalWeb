@@ -1,0 +1,182 @@
+//  DARK THEME
+
+.color-theme-red {
+    --cv-theme-color: #cc0c11;
+    --cv-theme-color-rgb: 255, 59, 48;
+    --cv-theme-color-shade: #000000;
+    --cv-theme-color-tint: #cc0c11
+}
+
+.color-theme-green {
+    --cv-theme-color: #4cd964;
+    --cv-theme-color-rgb: 76, 217, 100;
+    --cv-theme-color-shade: #2cd048;
+    --cv-theme-color-tint: #6ee081
+}
+
+.color-theme-blue {
+    --cv-theme-color: #0000fe;
+    --cv-theme-color-rgb: 33, 150, 243;
+    --cv-theme-color-shade: #1E74FD;
+    --cv-theme-color-tint: #1E74FD;
+}
+
+.color-theme-pink {
+    --cv-theme-color: #ff2d55;
+    --cv-theme-color-rgb: 255, 45, 85;
+    --cv-theme-color-shade: #ff0434;
+    --cv-theme-color-tint: #ff5676
+}
+
+.color-theme-yellow {
+    --cv-theme-color: #ffcc00;
+    --cv-theme-color-rgb: 255, 204, 0;
+    --cv-theme-color-shade: #d6ab00;
+    --cv-theme-color-tint: #ffd429
+}
+
+.color-theme-orange {
+    --cv-theme-color: #ff9500;
+    --cv-theme-color-rgb: 255, 149, 0;
+    --cv-theme-color-shade: #d67d00;
+    --cv-theme-color-tint: #ffa629
+}
+
+.color-theme-purple {
+    --cv-theme-color: #9c27b0;
+    --cv-theme-color-rgb: 156, 39, 176;
+    --cv-theme-color-shade: #7e208f;
+    --cv-theme-color-tint: #b92fd1
+}
+
+.color-theme-deeppurple {
+    --cv-theme-color: #673ab7;
+    --cv-theme-color-rgb: 103, 58, 183;
+    --cv-theme-color-shade: #563098;
+    --cv-theme-color-tint: #7c52c8
+}
+
+.color-theme-lightblue {
+    --cv-theme-color: #5ac8fa;
+    --cv-theme-color-rgb: 90, 200, 250;
+    --cv-theme-color-shade: #32bbf9;
+    --cv-theme-color-tint: #82d5fb
+}
+
+.color-theme-teal {
+    --cv-theme-color: #009688;
+    --cv-theme-color-rgb: 0, 150, 136;
+    --cv-theme-color-shade: #006d63;
+    --cv-theme-color-tint: #00bfad
+}
+
+.color-theme-lime {
+    --cv-theme-color: #cddc39;
+    --cv-theme-color-rgb: 205, 220, 57;
+    --cv-theme-color-shade: #bac923;
+    --cv-theme-color-tint: #d6e25c
+}
+
+.color-theme-deeporange {
+    --cv-theme-color: #ff6b22;
+    --cv-theme-color-rgb: 255, 107, 34;
+    --cv-theme-color-shade: #000000;
+    --cv-theme-color-tint: #ff864b
+}
+
+.color-theme-gray {
+    --cv-theme-color: #8e8e93;
+    --cv-theme-color-rgb: 142, 142, 147;
+    --cv-theme-color-shade: #000000;
+    --cv-theme-color-tint: #a3a3a7
+}
+
+.color-theme-white {
+    --cv-theme-color: #ffffff;
+    --cv-theme-color-rgb: 255, 255, 255;
+    --cv-theme-color-shade: #ebebeb;
+    --cv-theme-color-tint: #ffffff
+}
+
+.color-theme-black {
+    --cv-theme-color: #000000;
+    --cv-theme-color-rgb: 0, 0, 0;
+    --cv-theme-color-shade: #000000;
+    --cv-theme-color-tint: #141414
+}
+
+
+
+.color-theme-brown {
+    --cv-theme-color: #D2691E;
+    --cv-theme-color-rgb: 255, 107, 34;
+    --cv-theme-color-shade: #f85200;
+    --cv-theme-color-tint: #ff864b
+}
+
+.color-theme-darkgreen {
+    --cv-theme-color: #2a9d2a;
+    --cv-theme-color-rgb: 142, 142, 147;
+    --cv-theme-color-shade: #afdd1e;
+    --cv-theme-color-tint: #a3a3a7
+}
+
+.color-theme-deeppink {
+    --cv-theme-color: #FFC0CB;
+    --cv-theme-color-rgb: 255, 255, 255;
+    --cv-theme-color-shade: #ebebeb;
+    --cv-theme-color-tint: #ffffff
+}
+
+.color-theme-darkorchid {
+    --cv-theme-color: #9932cc;
+    --cv-theme-color-rgb: 0, 0, 0;
+    --cv-theme-color-shade: #000000;
+    --cv-theme-color-tint: #141414
+}
+
+
+.full-wrap {
+	@media (min-width: 1599px) {
+		.container-fluid {
+			padding-left: 200px; 
+			padding-right: 200px; 
+		}
+
+	}
+    @media (max-width: 1600px) {
+        .container-fluid {
+            padding-left: 15px; 
+            padding-right: 15px; 
+        }
+
+    }
+    
+	.owl-carousel .owl-stage-outer {
+		overflow: visible;
+		.owl-item {
+		    opacity: 0.4;
+		}
+		.owl-item.active {
+    		opacity: 1;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+        
+    .service-wrapper .container-fluid {
+        padding-left: 200px; 
+        padding-right: 200px; 
+        .owl-carousel .owl-stage-outer {
+            overflow: visible;
+            .owl-item {
+                opacity: 0.4;
+            }
+            .owl-item.active {
+                opacity: 1;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,197 @@
+
+/*-----------------------------------------------------------
+    Theme Name: Magenta
+    Theme URI: http://uitheme.net/magenta/
+    Author: Uttam D
+    Author URI: http://uitheme.net/
+    Description: CV Landing Template
+    Version: 1.0.0
+-------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+    Table of Content: 
+
+    1. Abstract
+    2. Bootstrap CSS
+    3. Base
+    4. Component
+    5. Traker
+    6. Preloader
+    7. Header
+    8. Footer
+    9. Lower footer
+    10. Banner
+    11. Page Nav
+    12. Faq 
+    13. accordian
+    14. Symptom wrapper
+    15. Prevent wrapper
+    16. Blog wrapper
+    17. Speard wrapper
+    18. Brand LOGO
+    19. Count wrapper
+    20. Do Dont wrapper
+    21. Social SHARE
+    22. One Page wrapper
+
+    
+    
+*/
+
+@import "./abstract/abstract";
+@import "./../vendor/bootstrap/scss/bootstrap.scss";
+@import "./base/base";
+@import "./components/components";
+
+@import "./../vendor/owl-carousel/css/owl.carousel.min.css";
+@import "./../vendor/owl-carousel/css/owl.theme.default.css";
+
+
+body {font-family: 'Montserrat', sans-serif;}
+
+.main-video {
+    
+}
+
+
+#layout-style1 {
+    position: fixed;
+    width: 100%;
+    height: 100vh; 
+    top:0;
+    left:0;
+    z-index: -1;
+    background-size: cover;    
+}
+
+
+
+#layout-style2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0%;
+    left:0;
+    z-index: -1;
+    &:after {
+        background-color: rgba(0,0,0,0.3);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 1; 
+        content: '';
+    }
+}
+
+#layout-style3 {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    top:-34%;
+    right:0%;
+    z-index: -1;
+    &:after {
+        background-color: rgba(0,0,0,0.1);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 1; 
+        content: '';
+    }
+}
+
+
+
+body:not(.bg-transperent) {
+    .layout-style2 {
+        .main-wrapper .header-wrapper,
+        .main-wrapper .content-wrap {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.3);  
+        }
+    }
+}
+.bg-transperent {
+    #layout-style2:after {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+.bg-transperent {
+    .page {
+        background-color: transparent;
+    }
+}
+
+.layout-style3 {
+    background-color: #101010;
+}
+
+.scorll-overlay {margin-left: 0px;overflow-y: scroll; overflow-x: hidden;    }
+.scorll-overlay::-webkit-scrollbar-track {background-color: #f0f0f0;}
+.scorll-overlay::-webkit-scrollbar {width: 2px;background-color: #F5F5F5;}
+.scorll-overlay::-webkit-scrollbar-thumb {background-color: #aaa;}
+
+
+
+
+
+
+.full-wrap {
+    @media (min-width: 1599px) {
+        .container-fluid {
+            padding-left: 200px; 
+            padding-right: 200px; 
+        }
+
+    }
+    @media (max-width: 1600px) {
+        .container-fluid {
+            padding-left: 15px; 
+            padding-right: 15px; 
+        }
+
+    }
+    
+     
+}
+
+@media (min-width: 1200px) {
+        
+    .service-wrapper .container-fluid {
+        padding-left: 200px; 
+        padding-right: 200px; 
+    }
+    .p-lg-0 {padding: 0;}
+
+    .cursor-pointer {
+        margin: -13px 0 0 -13px;
+        position: absolute;
+        background: var(--cv-theme-color);
+        width: 36px;
+        height: 36px;
+        -webkit-transition: transform 1s cubic-bezier(.02,1.2,.8,1),opacity .25s ease;
+        transition: transform 1s cubic-bezier(.02,1.2,.8,1),opacity .25s ease;
+        opacity: .8;
+        z-index: 1111;
+        pointer-events: none;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -khtml-border-radius: 50%;
+    }
+
+
+}
+@media (max-width: 768px) {
+    .mob-work {height: 700px !important;}    
+}
+
+@media (max-width: 580px) {
+    #layout-style2 {display: none; }
+}

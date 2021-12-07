@@ -1,0 +1,98 @@
+.price-table {
+    padding-bottom: 0px; 
+    h4 {
+        font-size: 17px; 
+        font-weight: bold;
+        color: #111;
+        margin-bottom: 20px; 
+    }
+    span {
+        font-size: 13px;
+        line-height: 24px;
+        color: #666;
+        padding-right: 10%;
+        display: block;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 28px;
+        color: #222;
+        padding-right: 10%;
+        margin-bottom: 15px; 
+        padding-left: 30px; 
+        position: relative;
+        i {position: absolute; left:0; top:7px; }
+    }
+    .price-tab {
+        overflow: hidden;
+        padding: 30px 30px;
+        border-radius: 5px;
+        background-color: #222;
+        width: 100%;
+        margin: 0 auto; 
+        span {
+            font-size: 13px; 
+            font-weight: 400;
+            color: #999;
+            line-height: 24px; 
+            border-radius:3px; 
+            &.active {
+                background-color: #555;
+                color: #ddd;
+                display: inline-block;
+                text-align: center;
+                padding:  0 30px; 
+            }
+        }
+        h2 {
+            font-size: 50px; 
+            color: #eee;
+            font-weight: 700; 
+            margin-top: 30px; 
+            margin-bottom: 30px; 
+            i {
+                font-size: 20px;
+                font-weight: 500; 
+                font-style: normal;
+                margin-right: 5px; 
+                vertical-align: super;
+            }
+            b {
+                font-size: 14px; 
+                font-weight: 600; 
+                color: #aaa;
+            }
+        }
+        p {
+            padding: 0;
+            color: #aaa; 
+        }
+        .btn {
+            margin-top: 20px; 
+            width: 200px;
+            line-height: 60px; 
+            border-radius:40px; 
+            border:1px #ddd solid; 
+            color: #ddd;
+            font-size: 12px; 
+            font-weight: 600; 
+            text-transform: uppercase;
+            left: 1px; 
+            padding:  0; 
+            display: inline-block;
+            &.active {
+                color: #fff;
+                background-color: var(--cv-theme-color);
+                border:0;
+            }
+            i {
+                position: relative;
+                top:2px; 
+                font-size: 14px; 
+                margin-left: 5px; 
+                display: inline-block;
+            }
+        }
+    }
+}

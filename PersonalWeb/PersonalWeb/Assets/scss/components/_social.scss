@@ -1,0 +1,21 @@
+.social-icons {
+    margin-bottom: 10px; 
+    li {
+        a {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            display: inline-block;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px; 
+        }
+    }
+}
+
+
+.bg-facebook {background-color: #3b5998 !important;}
+.bg-twitter {background-color: #55acee !important;}
+.bg-pin {background-color: #cb2027 !important;}
+.bg-dribbble {background-color: #f26798 !important;}
+

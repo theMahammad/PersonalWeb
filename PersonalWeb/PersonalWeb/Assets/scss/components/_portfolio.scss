@@ -1,0 +1,206 @@
+.project-grid-item{
+	margin-bottom: 30px; 
+	a {
+		display: block;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		&:hover {
+			.project-img-overlay:after {opacity: 1;}
+			.project-content {opacity: 1;}
+		}
+	}
+	.project-img-overlay {
+	    position: absolute;
+	    top: 5px;
+	    right: 5px;
+	    bottom: 5px;
+	    left: 5px;
+	    -webkit-transition: all .4s;
+	    transition: all .4s;
+	    background-color: rgba(0, 0, 0, 0);
+	    &:after {
+	    	content: '';
+	    	background: linear-gradient(180deg, var(--cv-theme-color) 0%, var(--cv-theme-color-shade) 100%);
+	    	width: 100%;
+	    	height: 100%;
+	    	position: absolute;
+	    	top:0;
+	    	left:0;
+	    	-webkit-transition: all .4s;
+	    	transition: all .4s;
+	    	opacity: 0;
+	    }
+	    .project-content {
+		    position: absolute;
+		    top: 50%;
+		    left: 0;
+		    transform: translateY(-50%);
+		    width: 100%;
+		    text-align: center;
+		    z-index: 2;
+		    -webkit-transition: .5s;
+		    transition: .5s;
+		    opacity: 0;
+		    h3 {
+		    	font-size: 20px;
+		    	font-weight: 600;
+		    	color: #fff;
+		    	margin-bottom: 5px; 
+		    }
+		    h6 {
+		    	font-size: 10px;
+		    	color: #ddd;
+		    	text-transform: uppercase;
+				font-weight: 600; 
+				letter-spacing: 1px; 
+				border-bottom: 2px #ddd solid; 
+				display: inline-block; 
+				line-height: 24px; 
+		    }
+		}
+	} 
+}
+.project-list {
+	margin-bottom: 45px; 
+	margin-top: 10px; 
+	ul {
+		text-align: center;
+		display: block;	
+		li {
+			color: #fff;
+			font-size: 11px;
+			padding: 0 20px; 
+			display: inline-block; 
+			text-transform: uppercase;
+			font-weight: 500; 
+			letter-spacing: 1px; 
+			line-height: 40px;
+			background-color: #333;
+			border-radius:20px; 
+			cursor: pointer;
+		}
+	}
+}
+.project-container {
+    display: inline-block;
+    width: 100%;
+}
+.project-item-wrap {
+    min-height: calc(100vh);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 200;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .5s;
+		    transition: .5s;
+    &.active {
+    	opacity: 1;
+    	visibility: visible;
+    }
+    .project-close-bttn {
+    	position: absolute;
+    	top:20px;
+    	right:20px;
+    	color: #fff;
+    	z-index: 201;
+    	i {font-size: 28px;}
+    }    
+    .item-brief {
+    	display: none;
+    	-webkit-transition: .5s;
+		transition: .5s;
+		width: 1000px;
+		height: auto; 
+		margin:0 auto;
+		background-color: #333;
+		position: relative;		
+		z-index: 201;
+		top: 100px;
+    	&.active {
+	    	top: 0;
+	    }
+	    &.bg-none {
+	    	background-color:transparent;
+	    }
+	}
+	.item-brief-img {
+		width: 50%;
+		float: left;
+		position: relative;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	.item-brief-video {
+		width: 100%;
+		float: left;
+		position: relative;
+
+	}
+	.item-brief-content {
+		width: 50%;
+		float: left;
+		position: relative;
+		padding: 50px 60px; 
+		text-align: left;
+		h2 {
+			color: #fff;
+			font-weight: 600;
+			margin-top: 0;
+			font-size: 32px;
+			display: block; 
+			margin-bottom: 30px; 
+		}
+		h3 {
+			font-size: 16px; 
+			font-weight: 400; 
+			color: #ddd;
+			margin-bottom: 15px; 
+			i {
+				width: 35px; 
+				height: 35px; 
+				border-radius:40px;
+				display: inline-block;
+				background-color: #222;
+				text-align: center;
+				line-height: 35px; 
+				font-size: 14px; 
+				color: #fff;
+				margin-right: 15px; 
+			}
+		}
+		p {
+			font-size: 14px; 
+			line-height: 30px;
+			color: #ddd; 
+			margin-bottom: 40px; 
+			margin-top: 30px; 
+
+		}
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.project-item-wrap .item-brief {width: 100%;  }
+	.project-item-wrap {padding: 30px; display: inline-block; }
+	.project-list ul li {padding: 0 15px; font-size: 10px; line-height: 35px;  margin-bottom: 5px; }
+}
+@media (max-width: 768px) {
+	.project-item-wrap .project-close-bttn {top:5px; right:5px;}
+	.project-item-wrap .item-brief-img,.project-item-wrap .item-brief-content {width: 100%;}
+	.project-item-wrap .item-brief-content {padding: 20px; }
+	.project-item-wrap {overflow: scroll; height: 100vh;}
+	.project-item-wrap .item-brief {overflow: hidden;}
+
+}

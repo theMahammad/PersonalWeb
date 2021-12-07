@@ -1,0 +1,336 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    .loader-img {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1003;
+        span {
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            width: 100px;
+            height: auto;
+            z-index: 1002;
+            margin-left: -50px;
+            margin-top: -25px;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+            line-height: 50px; 
+            text-align: center;
+            font-size: 12px; 
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px; 
+            color: #fff;
+        }
+    }
+    .loader-section {
+        position: fixed;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        background: #111;
+        color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .loader-section.section-left {
+        left: 0;
+    }
+    .loader-section.section-right {
+        right: 0;
+    }
+}
+
+.loaded {
+    .loader-wrapper {
+        .loader-section.section-left {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+            -webkit-transition: all 0.7s 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+        .loader-section.section-right {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+            -webkit-transition: all 0.7s 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 0.7s 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+        .loader-img {
+            -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+            -webkit-transition: all 0.2s 0.3s ease;
+            transition: all 0.2s 0.3s ease;
+        }
+        visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 0.3s 1.5s ease-out;
+        transition: all 0.3s 1.5s ease-out;
+    }
+}
+
+
+
+.animation1 {
+    .animationIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    .animationOut {
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+    }
+}
+
+.animation2 {
+    .animationIn {
+        -webkit-animation-name: fadeInDownBig;
+        animation-name: fadeInDownBig;
+    }
+    .animationOut {
+        -webkit-animation-name: fadeOutDownBig;
+        animation-name: fadeOutDownBig;
+    }
+}
+
+.animation3 {
+    .animationIn {
+        -webkit-animation-name: fadeInUpBig;
+        animation-name: fadeInUpBig;
+    }
+    .animationOut {
+        -webkit-animation-name: fadeOutUpBig;
+        animation-name: fadeOutUpBig;
+    }
+}
+
+.animation4 {
+    .animationIn {
+        -webkit-animation-name: fadeInLeftBig;
+        animation-name: fadeInLeftBig;
+    }
+    .animationOut {
+        -webkit-animation-name: fadeOutRightBig;
+        animation-name: fadeOutRightBig;
+    }
+}
+.animation5 {
+    .animationIn {
+        -webkit-animation-name: flipInX;
+        animation-name: flipInX;
+    }
+    .animationOut {
+        -webkit-animation-name: flipOutX;
+        animation-name: flipOutX;
+    }
+}
+.animation6 {
+    .animationIn {
+        -webkit-animation-name: flipInY;
+        animation-name: flipInY;
+    }
+    .animationOut {
+        -webkit-animation-name: flipOutY;
+        animation-name: flipOutY;
+    }
+}
+.animation7 {
+    .animationIn {
+        -webkit-animation-name: rotateIn;
+        animation-name: rotateIn;
+    }
+    .animationOut {
+        -webkit-animation-name: rotateOut;
+        animation-name: rotateOut;
+    }
+}
+.animation8 {
+    .animationIn {
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+    }
+    .animationOut {
+        -webkit-animation-name: zoomOut;
+        animation-name: zoomOut;
+    }
+}
+
+.animation9 {
+    .animationIn {
+        -webkit-animation-name: rollIn;
+        animation-name: rollIn;
+    }
+    .animationOut {
+        -webkit-animation-name: rollOut;
+        animation-name: rollOut;
+    }
+}
+.animation10 {
+    .animationIn {
+        -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+    }
+    .animationOut {
+        -webkit-animation-name: bounceOut;
+        animation-name: bounceOut;
+    }
+}
+.animation1 {
+    .overlay-color-1 {
+        width: 130%;
+        height: 110vh;
+        bottom:-125%;
+        left: 0;
+        position: absolute;
+        z-index: 100;
+        transform: skewY(5deg);
+        transition: all 1s ease-in-out;
+        transition-delay: 0.2s;
+        &.active {
+            bottom:125%;
+        }
+    }
+    .overlay-color-2 {
+        width: 130%;
+        height: 110vh;
+        bottom:-125%;
+        left: 0;
+        position: absolute;
+        z-index: 101;
+        transform: skewY(-5deg);
+        transition: all 1s ease-in-out;
+        transition-delay: 0.4s;
+        &.active {
+            bottom:125%;
+        }
+    }
+    .overlay-color-3 {
+        width: 130%;
+        height: 110vh;
+        bottom:-125%;
+        left: 0;
+        position: absolute;
+        z-index: 102;
+        transform: skewY(5deg);
+        transition: all 1s ease-in-out;
+        transition-delay: 0.6s;
+        &.active {
+            bottom:125%;
+        }
+    }
+}
+.animation2 {
+    .overlay-color-2,.overlay-color-3 {display: none;}
+    .overlay-color-1 {
+        background-color: #ff3b30 !important;
+        width: 150%;
+        height: 100vh;
+        bottom:0%;
+        left: -170%;
+        position: absolute;
+        z-index: 100;
+        transform: skewX(35deg);
+        transition: all 1.5s ease-in-out;
+        transition-delay: 0.2s;
+        &.active {
+            transform: skewX(-35deg);
+            left: 170%;
+        }
+    }
+}
+
+.animation3 {
+    .overlay-color-2,.overlay-color-3 {display: none;}
+    .overlay-color-1 {
+        background-color: #ff3b30 !important;
+        width: 200%;
+        height: 100vh;
+        bottom:0%;
+        left: -200%;
+        position: absolute;
+        z-index: 100;
+        transform: skewX(0deg);
+        transition: all 1.5s ease-in-out;
+        transition-delay: 0.2s;
+        &.active {
+            left: 200%;
+        }
+    }
+}
+
+.animation4 {
+    .overlay-color-2,.overlay-color-3 {display: none;}
+    .overlay-color-1 {
+        background-color: #ff3b30 !important;
+        width: 100%;
+        height: 200vh;
+        bottom:-200%;
+        left: 0;
+        position: absolute;
+        z-index: 100;
+        transform: skewX(0deg);
+        transition: all 1.5s ease-in-out;
+        transition-delay: 0.2s;
+        &.active {
+            transform: skewX(0deg);
+            bottom: 200%;
+        }
+    }
+}
+
+.animation5 {
+    .overlay-color-2,.overlay-color-3 {display: none;}
+    .overlay-color-1 {
+        background-color: #ff3b30 !important;
+        width: 100%;
+        height: 200vh;
+        left:0%;
+        bottom: -230%;
+        position: absolute;
+        z-index: 100;
+        transform: skewY(15deg);
+        transition: all 1.5s ease-in-out;
+        transition-delay: 0.2s;
+        &.active {
+            bottom: 230%;
+        }
+    }
+}
+.animation6 {
+    .overlay-color-2,.overlay-color-3 {display: none;}
+    .overlay-color-1 {
+        background-color: #ff3b30 !important;
+        width: 150%;
+        height: 100vh;
+        bottom:0%;
+        left: -170%;
+        position: absolute;
+        z-index: 100;
+        transform: skewX(35deg);
+        transition: all 1.5s ease-in-out;
+        transition-delay: 0.2s;
+        &.active {
+            transform: skewX(-35deg);
+            left: 170%;
+        }
+    }
+}
